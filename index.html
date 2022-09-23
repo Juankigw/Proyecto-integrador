@@ -4,37 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.css">
+    
     <title>Proyecto integrador</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar1">
         <div class="logo">
             <img src="./imagenes/массаж_логотип__7_тыс_изображений_найдено_в_Яндекс_Картинках___Спа_логотип__Дизайн_карты__Массаж___Massage_logo__Salon_logo_design__Massage_therapy_business_cards-removebg-preview.png" alt="">
         </div>
         <div class="titulo">
             <h1>Azom<i class="fa-light fa-trillium"></i>alli</h1>
         </div>
-        <div class="lista">
-            <ul>
-                <li><i class="fa-solid fa-fan"></i> Registrate</li>
-                <li><i class="fa-solid fa-fan"></i> Login</li>
-                <li><i class="fa-solid fa-fan"></i> Quienes somos</li>
-                <li><i class="fa-solid fa-fan"></i> Contactanos</li>
+        <input type="checkbox" id="check">
+            <label for="check" class="bar__btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav__menu">
+                <li><a href="index.html"><i class="fa-solid fa-fan"></i> Inicio</a></li>
+                <li><a href="Registro.html"><i class="fa-solid fa-fan"></i> Registrate</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-fan"></i> Login</a></li>
+                <li><a href="#quienessomos"><i class="fa-solid fa-fan"></i> Quienes somos</a></li>
+                <li><a href="#contactanos"><i class="fa-solid fa-fan"></i> Contactanos</a></li>
             </ul>
+    </nav>
+    <section class="hero">
+        <div class="frase">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nostrum animi tempora? Atque repellendus voluptatibus quam provident tempore delectus nihil error in similique voluptatum velit expedita minima, dolorem, consequatur voluptates?
+            </p>
 
         </div>
+        <img src="./imagenes/depositphotos_198061544-stock-photo-massage-gazebo-overlooking-the-sea.jpg" alt="">
 
-    </nav>
-    <div class="hero">
-        <img src="./imagenes/loto azul.png" alt="">
+    </section>
+    <section class="Galeriadeimagenes" id="quienessomos">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/carrusel1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/carrusel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/carrusel3.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/descarga.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/descarga2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/flor-loto-azul-640x800.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="section-cards">
+      <div class="cards card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header"></div>
+          <div class="card-body text-success">
+            <h5 class="card-title">Entrega a domicilio</h5>
+            <p class="card-text">Entrega inmediata y gratuita a todo el país!</p>
+          </div>
+        </div>
+        <div class="card border-success mb-3 cards" style="max-width: 18rem;">
+          <div class="card-header"></div>
+          <div class="card-body text-success">
+            <h5 class="card-title">Amplio Stock</h5>
+            <p class="card-text">Pedí nuestro catalogo online, miles de productos a tu disposicion y stock permanente!</p>
+          </div>
+        </div>
+        <div class="card border-success mb-3 cards" style="max-width: 18rem;">
+          <div class="card-header"></div>
+          <div class="card-body text-success">
+            <h5 class="card-title">Atencion personalizada</h5>
+            <p class="card-text">El mejor asesoramiento personalizado y capacitado para evacuarte cualquier duda!</p>
+          </div>
+        </div>
 
-    </div>
+  </section>
+    <section class="section-contacto" id="contactanos">
+      <div class="div-contactanos">
+          <h2>Contactanos</h2>
+          <ul>
+              <li><h4><i class="fa-solid fa-location-dot"></i> Aviador Pettirossi 3386, Córdoba, Argentina.</h4></li>
+              <li><h4><i class="fa-solid fa-envelope"></i> merywoman_22@hotmail.com</h4></li>
+              <li><h4><i class="fa-brands fa-whatsapp"></i> 3514089063</h4></li>
+          </ul>
+          <ul class="contactanos-redes">
+              <li><p><a href="#"><i class="fa-brands fa-instagram"></i></a></h3></i></li>
+              <li><p><a href="#"><i class="fa-brands fa-facebook"></i></a></h3></i></li>
+              <li><p><a href="#"><i class="fa-brands fa-twitter"></i></a></h3></i></li>
+          </ul>
+      </div>
+      <div class="div-mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.8038952155666!2d-64.2482771!3d-31.447065300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a1f4a9bdcbd7%3A0xe7547882d5897d24!2sAvdor%20Silvio%20Pettirossi%203386%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1663902763177!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
-
+  </section>
+  <footer class="section-footer">
+      <img class="logo" src="./imagenes/массаж_логотип__7_тыс_изображений_найдено_в_Яндекс_Картинках___Спа_логотип__Дизайн_карты__Массаж___Massage_logo__Salon_logo_design__Massage_therapy_business_cards-removebg-preview.png" alt="logo juanko electronics">
+  </footer>
+    <script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
